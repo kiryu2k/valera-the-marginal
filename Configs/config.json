@@ -1,0 +1,155 @@
+[
+  {
+    "name": "Go to work",
+    "modifiable_params": {
+      "alcohol": {
+        "default": -30
+      },
+      "money": {
+        "default": 100
+      },
+      "cheerfulness": {
+        "default": -5
+      },
+      "tiredness": {
+        "default": 70
+      }
+    },
+    "condition": {
+      "alcohol": "<50",
+      "tiredness": "<10"
+    }
+  },
+  {
+    "name": "Drink wine and watch movies",
+    "modifiable_params": {
+      "alcohol": {
+        "default": 30
+      },
+      "health": {
+        "default": -5
+      },
+      "cheerfulness": {
+        "default": -1
+      },
+      "tiredness": {
+        "default": 10
+      },
+      "money": {
+        "default": -20
+      }
+    }
+  },
+  {
+    "name": "Contemplate nature",
+    "modifiable_params": {
+      "cheerfulness": {
+        "default": 1
+      },
+      "alcohol": {
+        "default": -10
+      },
+      "tiredness": {
+        "default": 10
+      }
+    }
+  },
+  {
+    "name": "Go to a bar",
+    "modifiable_params": {
+      "cheerfulness": {
+        "default": 1
+      },
+      "alcohol": {
+        "default": 60
+      },
+      "tiredness": {
+        "default": 40
+      },
+      "health": {
+        "default": -10
+      },
+      "money": {
+        "default": -100
+      }
+    }
+  },
+  {
+    "name": "Drink with marginals",
+    "modifiable_params": {
+      "cheerfulness": {
+        "default": 5
+      },
+      "health": {
+        "default": -80
+      },
+      "alcohol": {
+        "default": 90
+      },
+      "tiredness": {
+        "default": 80
+      },
+      "money": {
+        "default": -150
+      }
+    }
+  },
+  {
+    "name": "Sing in the subway",
+    "modifiable_params": {
+      "cheerfulness": {
+        "default": 1
+      },
+      "alcohol": {
+        "default": 10
+      },
+      "money": {
+        "default": 10,
+        "extra": [
+          {
+            "value": 50,
+            "condition": {
+              "alcohol": ">40&<70"
+            }
+          }
+        ]
+      },
+      "tiredness": {
+        "default": 20
+      }
+    }
+  },
+  {
+    "name": "Sleep",
+    "modifiable_params": {
+      "health": {
+        "default": 0,
+        "extra": [
+          {
+            "value": 90,
+            "condition": {
+              "alcohol": "<30"
+            }
+          }
+        ]
+      },
+      "cheerfulness": {
+        "default": 0,
+        "extra": [
+          {
+            "value": -3,
+            "condition": {
+              "alcohol": ">70"
+            }
+          }
+        ]
+      },
+      "alcohol": {
+        "default": -50
+      },
+      "tiredness": {
+        "default": -70
+      }
+    }
+  }
+]
